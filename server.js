@@ -14,10 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 // Serve frontend
-app.use("/Frontend", express.static(path.join(process.cwd(), "Frontend")));
+app.use("/frontend", express.static(path.join(process.cwd(), "frontend")));
 
 app.get("/", (req, res) => {
-  res.redirect("/Frontend/login.html");
+  res.redirect("/frontend/login.html");
 });
 
 
