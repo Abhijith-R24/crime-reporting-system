@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//to create a crime report schema
 const CrimeReportSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
